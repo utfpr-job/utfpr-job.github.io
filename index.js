@@ -1,3 +1,5 @@
+let timeoutId = 0
+
 function createRandomData (length = 40) {
   return Array.from({ length }).map(() => Math.floor(Math.random() * 100))
 }
@@ -31,7 +33,7 @@ function search(data, position) {
   resetBackgroud()
   setActualPosition(position)
 
-  setTimeout(function () {
+  timeoutId = setTimeout(function () {
     if (data?.[position + 1] > data[position]) {
       position++
       search(data, position)
@@ -48,6 +50,7 @@ function search(data, position) {
 }
 
 function start () {
+  clearTimeout(timeoutId)
   bar(createRandomData())
 }
 
