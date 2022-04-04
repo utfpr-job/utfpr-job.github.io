@@ -1,4 +1,4 @@
-function createRandomData (length = 50) {
+function createRandomData (length = 40) {
   return Array.from({ length }).map(() => Math.floor(Math.random() * 100))
 }
 
@@ -11,7 +11,7 @@ function setActualPosition(position) {
 }
 
 function mkBar (size) {
-  return `<div class="bar" style="height: ${size * 2}px; margin-top: ${140 - size * 2}px;"></div>`
+  return `<div class="bar" style="height: ${size * 2}px; margin-top: ${140 - size * 2}px;">${size}</div>`
 }
 
 function bar(data) {

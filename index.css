@@ -1,8 +1,10 @@
 .bar {
-  width: 10px;
+  font-size: 0.5em;
+  width: 13px;
   margin-right: 3px;
   background: #5050F5;
   float: left;
+  font-style: oblique;
 }
 
 .app {
