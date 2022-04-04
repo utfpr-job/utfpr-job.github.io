@@ -1,0 +1,25 @@
+.bar {
+  width: 10px;
+  margin-right: 3px;
+  background: #5050F5;
+  float: left;
+}
+
+.app {
+  font-family: arial;
+  font-size: 24px;
+  width: 100%;
+}
+
+.content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.target {
+  margin-top: 100px;
+}
+
+p, h1 {
+  margin: 30px;
+}
