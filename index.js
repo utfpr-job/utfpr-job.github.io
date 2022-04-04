@@ -1,5 +1,5 @@
 const dataSet = []
-for (let i = 0; i < 50; i ++) {
+for (let i = 0; i < 70; i ++) {
   dataSet.push(Math.floor(Math.random() * 100))
 }
 
@@ -20,7 +20,7 @@ function setActualPosition(position) {
 function search(position) {
   resetBackgroud()
   setActualPosition(position)
-
+  
   setTimeout(function () {
     if (dataSet?.[position + 1] > dataSet[position]) {
       position++
@@ -37,4 +37,4 @@ function search(position) {
   }, 500)
 }
 
-search(Math.floor(Math.random() * 50))
+search(Math.floor(Math.random() * 70))
