@@ -1,8 +1,8 @@
 .bar {
   font-size: 0.5em;
-  width: 13px;
+  width: 1vw;
   margin-right: 3px;
-  background: #5050F5;
+  background: rgb(81, 81, 245);
   float: left;
   font-style: oblique;
 }
@@ -27,20 +27,20 @@ p, h1 {
 }
 
 button {
-  margin-left: 30px;
+  margin-left: 40%;
   display: inline-block;
-  outline: none;
+  outline: 0;
+  border:0;
   cursor: pointer;
-  border-radius: 3px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  padding: 2px 16px;
-  height: 32px;
-  min-width: 60px;
-  min-height: 32px;
-  border: none;
-  color: #fff;
-  background-color: #4f545c;
-  transition: background-color .17s ease,color .17s ease;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  background: #fff;
+  line-height: 30px;
+  border-radius: 40px;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  box-shadow: rgb(255, 0, 0) -2px -2px 0px 2px, rgb(81, 81, 245) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
 }
